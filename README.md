@@ -47,7 +47,8 @@ celery -A app.tasks.celery worker --loglevel=info --pool=solo
 
 VITE_SUPABASE_URL=...
 VITE_SUPABASE_ANON_KEY=...
-npm run dev
+
+`npm run dev`
 
 
 ## Notes / Design choices
