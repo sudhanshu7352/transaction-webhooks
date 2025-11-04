@@ -39,16 +39,18 @@ celery -A app.tasks.celery worker --loglevel=info --pool=solo
 ## Frontend
 - Tech: React + TypeScript, Recharts, Supabase (for persisting user values)
 - Setup:
-`cd frontend`
+ 
+  `cd frontend`
 
-`npm install`
+  `npm install`
 
   `create .env`
 
-VITE_SUPABASE_URL=...
-VITE_SUPABASE_ANON_KEY=...
+    - VITE_SUPABASE_URL=...
+  
+    - VITE_SUPABASE_ANON_KEY=...
 
-`npm run dev`
+  `npm run dev`
 
 
 ## Notes / Design choices
