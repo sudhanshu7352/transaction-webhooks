@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "moduleResolution": "bundler",
+    "target": "ESNext",
     "module": "ESNext",
     "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true
   }

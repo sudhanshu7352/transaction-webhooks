@@ -75,7 +75,7 @@ function App() {
       values,
       updated_at: new Date().toISOString(),
     };
-    const { error } = await supabase.from("user_chart_values").upsert(payload, { onConflict: ["email", "chart_key"] });
+    const { error } = await supabase.from("user_chart_values").upsert(payload, { onConflict: "email,chart_key" });
     if (error) {
       console.warn("Failed to save to supabase:", error);
       alert("Failed to save values to remote. Values persisted locally in this session only.");
